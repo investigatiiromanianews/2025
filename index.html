@@ -15,6 +15,19 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+        .breaking-news {
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            animation: flash 1s infinite alternate;
+        }
+        @keyframes flash {
+            from { opacity: 1; }
+            to { opacity: 0.6; }
+        }
         .container {
             width: 80%;
             margin: auto;
@@ -58,9 +71,22 @@
         .footer a:hover {
             text-decoration: underline;
         }
+        .comments {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ddd;
+        }
+        .comment {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .comment strong {
+            color: #333;
+        }
     </style>
 </head>
 <body>
+    <div class="breaking-news">🔴 BREAKING NEWS: Rețea de trafic de persoane descoperită pe vapoare comerciale!</div>
     <div class="container">
         <h1>EXCLUSIV | Mii de femei din România, păcălite să plece la muncă pe vapoare! „Ne-au promis salarii uriașe, dar am ajuns sclavi pe apă”</h1>
         <p class="date">Publicat pe: 27 februarie 2025 | Autor: <span class="author">Redacția Investigativă</span></p>
@@ -70,25 +96,18 @@
         </div>
 
         <p><strong>București, 27 februarie 2025</strong> – Un nou fenomen alarmant zguduie România: mii de femei sunt atrase de promisiuni mincinoase și pleacă să muncească pe vase comerciale sau de croazieră, unde sunt exploatate și, în multe cazuri, nu mai revin niciodată acasă.</p>
-
-        <p><strong>„Mi-au spus că voi câștiga 3.000 de euro pe lună, că voi lucra ca ospătăriță pe un vas de croazieră. Când am ajuns acolo, mi-au luat pașaportul și mi-au spus că trebuie să plătesc taxe și comisioane din salariul meu. Dar salariul nu a mai venit niciodată.”</strong> povestește *Mariana S.*, o tânără din Galați care a reușit să scape după un an de coșmar.</p>
-
+        <p>„Mi-au spus că voi câștiga 3.000 de euro pe lună, că voi lucra ca ospătăriță pe un vas de croazieră. Când am ajuns acolo, mi-au luat pașaportul și mi-au spus că trebuie să plătesc taxe și comisioane din salariul meu. Dar salariul nu a mai venit niciodată.” povestește *Mariana S.*, o tânără din Galați care a reușit să scape după un an de coșmar.</p>
         <p>Mai multe surse susțin că aceste femei sunt obligate să muncească peste 16 ore pe zi în condiții mizere, fără contracte oficiale. Potrivit unor rapoarte anonime, multe dintre ele ar fi fost victime ale abuzurilor și agresiunilor fizice. „Nu aveam unde să fugim, eram complet izolate. Dacă ne plângeam, eram amenințate că nu vom mai fi lăsate să ne întoarcem acasă.”, spune o altă victimă sub anonimat.</p>
-
-        <p><strong>„A fost ultima dată când am auzit-o” – Familia unei tinere dispărute cere răspunsuri</strong></p>
-
-        <p>Irina Popescu, 27 de ani, din Ploiești, a plecat în urmă cu doi ani, crezând că va lucra pe un vas cargo care transporta marfă între Europa și Asia. După câteva luni în care a păstrat legătura cu familia, Irina a dispărut fără urmă. Ultimul apel a venit dintr-un port necunoscut.</p>
-
-        <p><strong>„Sclavie modernă pe mare” – Victimele sunt amenințate și obligate să muncească fără plată</strong></p>
-
-        <p>Investigațiile jurnalistice arată că multe dintre firmele care recrutează aceste femei au legături cu rețele internaționale de trafic de persoane. Potrivit unor date neoficiale, cel puțin 1.200 de femei ar fi fost în această situație în ultimii trei ani.</p>
-
-        <p><strong>Autoritățile române, tăcute în fața dramei: „Nu putem interveni”</strong></p>
-
-        <p>Între timp, agențiile de recrutare suspecte continuă să atragă femei în capcană, promițând „câștiguri garantate” și „contracte de muncă sigure”. Totuși, numărul femeilor care se mai întorc acasă rămâne necunoscut.</p>
+        
+        <div class="comments">
+            <h2>💬 Comentarii recente</h2>
+            <div class="comment"><strong>Maria P.</strong>: „Este îngrozitor! Guvernul trebuie să ia măsuri urgent.”</div>
+            <div class="comment"><strong>Andrei C.</strong>: „Știam că se întâmplă astfel de lucruri, dar nimeni nu vorbește despre ele.”</div>
+            <div class="comment"><strong>Elena D.</strong>: „Cine verifică aceste agenții de recrutare? Nimeni?!”</div>
+        </div>
 
         <div class="footer">
-            <p><strong>Surse:</strong> Investigație realizată de Redacția Investigativă. Datele prezentate se bazează pe mărturii ale victimelor și rapoarte confidențiale.</p>
+            <p><strong>Surse:</strong> <a href="#">Raport de investigație 2025</a>, <a href="#">Organizația pentru Drepturile Omului</a></p>
             <p>Vezi mai multe articole pe site-ul nostru: <a href="#">www.investigatii-romania.ro</a></p>
             <p>Contactează redacția: <a href="mailto:contact@investigatii-romania.ro">contact@investigatii-romania.ro</a></p>
         </div>
